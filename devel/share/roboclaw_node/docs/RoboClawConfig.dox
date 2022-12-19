@@ -1,0 +1,25 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~m1_pos_p" : \b [double] M1 P Gain min: -std::numeric_limits<double>::infinity(), default: 101.3418, max: std::numeric_limits<double>::infinity()
+- \b "~m1_pos_i" : \b [double] M1 I Gain min: -std::numeric_limits<double>::infinity(), default: 1.44922, max: std::numeric_limits<double>::infinity()
+- \b "~m1_pos_d" : \b [double] M1 D Gain min: -std::numeric_limits<double>::infinity(), default: 434.91602, max: std::numeric_limits<double>::infinity()
+- \b "~m1_max_i" : \b [double] M1 Max I min: -std::numeric_limits<double>::infinity(), default: 2465.0, max: std::numeric_limits<double>::infinity()
+- \b "~m2_pos_p" : \b [double] M1 P Gain min: -std::numeric_limits<double>::infinity(), default: 104.99219, max: std::numeric_limits<double>::infinity()
+- \b "~m2_pos_i" : \b [double] M1 I Gain min: -std::numeric_limits<double>::infinity(), default: 1.44336, max: std::numeric_limits<double>::infinity()
+- \b "~m2_pos_d" : \b [double] M1 D Gain min: -std::numeric_limits<double>::infinity(), default: 433.04004, max: std::numeric_limits<double>::infinity()
+- \b "~m2_max_i" : \b [double] M1 Max I min: -std::numeric_limits<double>::infinity(), default: 2341.0, max: std::numeric_limits<double>::infinity()
+- \b "~deadzone" : \b [int] Deadzone for Pos min: -2147483648, default: 5, max: 2147483647
+- \b "~angular_gain" : \b [double] angular velocity gain min: -std::numeric_limits<double>::infinity(), default: 1.8, max: std::numeric_limits<double>::infinity()
+- \b "~base_width" : \b [double] width between wheels min: -std::numeric_limits<double>::infinity(), default: 0.15, max: std::numeric_limits<double>::infinity()
+- \b "~ticks_per_meter" : \b [int] Encoder Ticks per meter min: -2147483648, default: 651000, max: 2147483647
+- \b "~m1_vel_p" : \b [double] M1 Max I min: -std::numeric_limits<double>::infinity(), default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~m1_vel_i" : \b [double] M1 Max I min: -std::numeric_limits<double>::infinity(), default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~m1_vel_d" : \b [double] M1 Max I min: -std::numeric_limits<double>::infinity(), default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~m1_vel_qpps" : \b [double] inverse speed adjustment min: -std::numeric_limits<double>::infinity(), default: 4000000.0, max: std::numeric_limits<double>::infinity()
+- \b "~m2_vel_p" : \b [double] M1 Max I min: -std::numeric_limits<double>::infinity(), default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~m2_vel_i" : \b [double] M1 Max I min: -std::numeric_limits<double>::infinity(), default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~m2_vel_d" : \b [double] M1 Max I min: -std::numeric_limits<double>::infinity(), default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~m2_vel_qpps" : \b [double] inverse speed adjustment min: -std::numeric_limits<double>::infinity(), default: 4000000.0, max: std::numeric_limits<double>::infinity()
+

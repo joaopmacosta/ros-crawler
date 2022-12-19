@@ -1,0 +1,8 @@
+prefix=/home/jcosta/workspace/ROS/crawler/devel
+
+Name: roboclaw_node
+Description: Description of roboclaw_node
+Version: 0.0.1
+Cflags: -I/home/jcosta/workspace/ROS/crawler/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

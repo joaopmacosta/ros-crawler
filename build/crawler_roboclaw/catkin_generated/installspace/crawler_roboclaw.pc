@@ -1,0 +1,8 @@
+prefix=/home/jcosta/workspace/ROS/crawler/install
+
+Name: crawler_roboclaw
+Description: Description of crawler_roboclaw
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,13 @@
+# Ignore the "build" and "devel" folder of the catkin_ws
+crawler/build/
+crawler/devel/
+
+# Ignore the ".catkin_workspace" file of the catkin_ws
+crawler/.catkin_workspace
+
+# Ignore the auto-generated "CMakeLists.txt" of the catkin_ws
+crawler/src/CMakeLists.txt
+
+# Ignore swp files and other typically unwanted files
+*.swp
+.DS_Store

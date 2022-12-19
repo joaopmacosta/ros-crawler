@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="dev" default="/dev/ttyFTDI"/>
+    <arg name="baud" default="115200"/>
+    <arg name="address" default="128"/>
+    <arg name="max_speed" default="10.0"/>
+    <arg name="ticks_per_meter" default="651000"/> <!--  4342.2"/> -->
+    <arg name="base_width" default="0.15"/>
+    <arg name="wheel_radius" default="0.07"/>
+    <arg name="angular_gain" default="1.8X"/>
+    <arg name="run_diag" default="true"/>
+    <arg name="m1_pos_p" default="101.34180"/>
+    <arg name="m1_pos_i" default="1.44922"/>
+    <arg name="m1_pos_d" default="434.91602"/>
+    <arg name="m1_max_i" default="2465"/>
+   
+    <arg name="m2_pos_p" default="104.99219"/>
+    <arg name="m2_pos_i" default="1.44336"/>
+    <arg name="m2_pos_d" default="433.04004"/>
+    <arg name="m2_max_i" default="2341"/>
+    
+    <arg name="min_pos" default="-10000"/>
+    <arg name="max_pos" default="10000"/>
+    <arg name="deadzone" default="5"/>
+
+    <node if="$(arg run_diag)" pkg="crawler_roboclaw" type="roboclaw.py" name="roboclaw_node" output="screen">
+        <param name="~dev" value="$(arg dev)"/>
+        <param name="~baud" value="$(arg baud)"/>
+        <param name="~address" value="$(arg address)"/>
+        <param name="~max_speed" value="$(arg max_speed)"/>
+        <param name="~ticks_per_meter" value="$(arg ticks_per_meter)"/>
+        <param name="~m1_pos_p" value="$(arg m1_pos_p)"/>
+        <param name="~m1_pos_i" value="$(arg m1_pos_i)"/>
+        <param name="~m1_pos_d" value="$(arg m1_pos_d)"/>
+        <param name="~m1_max_i" value="$(arg m1_max_i)"/>
+
+        <param name="~m2_pos_p" value="$(arg m2_pos_p)"/>
+        <param name="~m2_pos_i" value="$(arg m2_pos_i)"/>
+        <param name="~m2_pos_d" value="$(arg m2_pos_d)"/>
+        <param name="~m2_max_i" value="$(arg m2_max_i)"/>
+
+
+        <param name="~deadzone" value="$(arg deadzone)"/>
+        <param name="~min_pos" value="$(arg min_pos)"/>
+        <param name="~max_pos" value="$(arg max_pos)"/>
+    </node>
+
+
+
+</launch>

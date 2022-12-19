@@ -1,0 +1,31 @@
+<launch>
+  <arg name="joy_dev" default="/dev/input/js0" />
+  
+  <node pkg="joy" type="joy_node" name="joy_node">
+	  <param name="dev" value="$(arg joy_dev)" />
+	  <param name="autorepeat_rate" value="10" />
+  </node>
+
+  <node pkg="crawler_teleop" name="crawler_teleop" type="teleop.py">
+	  <param name="axis_linear" value="1"   />
+	  <param name="axis_angular" value="0"  />
+	  <param name="scale_linear" value="0.25"  />
+	  <param name="scale_angular" value="1.0" />
+    <!--<remap from="/cmd_vel" to="/turtle1/cmd_vel"/>-->
+	  <!--<remap from="/cmd_vel" to="/teleop/twistCommand"/>-->
+  </node>
+
+<!-- The following topics are in charge of switching between MANUAL and AUTO mode-->
+  <!--<node pkg="topic_tools" type="mux" name="cmd_mux" 
+      args="turtle1/cmd_vel /teleop/twistCommand /mux/autoCommand">
+  </node>
+
+  <node pkg="crawler_teleop" type="teleop_mux.py" name="teleop_mux">
+      <param name="joystick_button" value="0" type="int"/>
+      <param name="joystick_topic" value="/teleop/twistCommand"/>
+      <param name="auto_button" value="1" type="int"/>
+      <param name="auto_topic" value="/mux/autoCommand"/>
+      <param name="mux_prefix" value="/mux"/>
+      <remap from="/teleop_mux/joy" to="/joy"/>
+  </node>-->
+</launch>
