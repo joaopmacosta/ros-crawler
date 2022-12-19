@@ -1,8 +1,0 @@
-prefix=/home/jcosta/workspace/ROS/crawler/devel
-
-Name: crawler_teleop
-Description: Description of crawler_teleop
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -1,2 +1,0 @@
-crawler_roboclaw:crawler_teleop
--DCATKIN_DEVEL_PREFIX=/home/jcosta/workspace/ROS/crawler/devel -DCMAKE_INSTALL_PREFIX=/home/jcosta/workspace/ROS/crawler/install -G Unix Makefiles
